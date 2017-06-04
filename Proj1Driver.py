@@ -6,11 +6,14 @@ import sys
 import time
 import drawShapes
 
+# This function handles all print statements and function calls.  It creates
+# a narritive for the user to read, and (hopefully) evokes feelings of 
+# frustration
 if __name__ == '__main__':
     shortPause = 2
     longPause = 5
     i = 1
-
+    # Print initial greeting
     sys.stdout.write("Let's have fun with shapes!\n\n")
     sys.stdout.flush()
     time.sleep(shortPause)
@@ -19,6 +22,7 @@ if __name__ == '__main__':
     sys.stdout.flush()
     time.sleep(longPause)
 
+    # Make a square instead of a circle
     drawShapes.makeSquare()
     time.sleep(shortPause)
 
@@ -36,6 +40,7 @@ if __name__ == '__main__':
     sys.stdout.flush()
     time.sleep(longPause)
 
+    # Make either a circle or a square
     drawShapes.randomize()
     time.sleep(shortPause)
 
@@ -43,6 +48,7 @@ if __name__ == '__main__':
     sys.stdout.flush()
     time.sleep(shortPause)
 
+    # Make another randomized shape
     drawShapes.randomize()
     time.sleep(shortPause)
 
@@ -52,6 +58,7 @@ if __name__ == '__main__':
     sys.stdout.flush()
     time.sleep(shortPause)
 
+    # Make a few randomized shapes
     i = 1
     while i < 4:
         drawShapes.randomize()
@@ -60,7 +67,8 @@ if __name__ == '__main__':
     sys.stdout.write("Those I meant to make.\n")
     sys.stdout.flush()
     time.sleep(longPause)
-
+    
+    # Program gets snarky
     sys.stdout.write("Looks like you have some cleaning to do...\n\n")
     sys.stdout.flush()
     time.sleep(shortPause)
@@ -72,6 +80,7 @@ if __name__ == '__main__':
         time.sleep(shortPause)
         i = i + 1
 
+    # Closing statement
     sys.stdout.write("I'm done. Bye!\n\n")
     sys.stdout.flush()
     time.sleep(longPause)
